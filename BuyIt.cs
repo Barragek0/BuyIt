@@ -80,6 +80,18 @@ namespace BuyIt
             else return "";
         }
 
+        private enum ArtifactValues
+        {
+            /*
+             * These are values from expedition league, slightly adjusted by me.
+             * https://i.redd.it/qx9lhpiseyf71.png
+             */
+            LesserBlackScythe = 1/55,
+            GreaterBlackScythe = 1/95,
+            GrandBlackScythe = 1/100,
+            ExceptionalBlackScythe = 1/7
+        }
+
         private void PerformAction()
         {
             try
@@ -88,6 +100,9 @@ namespace BuyIt
                     return;
                 if (!isPOEActive())
                     return;
+                if (!isTujenWindowOpen())
+                    return;
+                Element haggleWindow = GameController.IngameState.IngameUi.HaggleWindow;
 
             }
             catch (Exception e)
