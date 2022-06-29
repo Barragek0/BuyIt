@@ -86,7 +86,7 @@ namespace BuyIt
              * These are values from expedition league, slightly adjusted by me.
              * https://i.redd.it/qx9lhpiseyf71.png
              */
-            LesserBlackScythe = 1/55,
+            LesserBlackScythe = 1/225,
             GreaterBlackScythe = 1/95,
             GrandBlackScythe = 1/100,
             ExceptionalBlackScythe = 1/7
